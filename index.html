@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sanjay Kumar Mishra: administration, finance and compliance professional with 33+ years of experience. Delhi, India.">
+<title>Sanjay Mishra Official Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+/* Layout: a ledger book. Ruled paper, a wide left margin column for labels/years, content in the right column. */
+:root {
+  --bg: #EDF0EE;
+  --surface: #F8FAF9;
+  --fg: #14232B;
+  --muted: #55666C;
+  --rule: #CBD5D2;
+  --accent: #0F5C5A;
+  --accent-ink: #FFFFFF;
+  --brass: #9A6A12;
+  --font-display: "Newsreader", "Georgia", serif;
+  --font-body: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0D1618; --surface: #142124; --fg: #E4ECEA; --muted: #9DB0AE;
+    --rule: #2A3C3F; --accent: #5CC2B8; --accent-ink: #0D1618; --brass: #D9A441;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0D1618; --surface: #142124; --fg: #E4ECEA; --muted: #9DB0AE;
+  --rule: #2A3C3F; --accent: #5CC2B8; --accent-ink: #0D1618; --brass: #D9A441;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline: 16px;
+  padding-block: 0 48px;
+}
+.wrap { max-width: 1040px; margin-inline: auto; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* top bar */
+.bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding-block: 20px; border-bottom: 1px solid var(--rule);
+}
+.mark { font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.nav { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a { font-size: 14px; color: var(--fg); text-decoration: none; }
+.nav a:hover { color: var(--accent); }
+.theme {
+  font: 500 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase;
+  background: transparent; color: var(--fg); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; cursor: pointer;
+}
+.theme:hover { border-color: var(--accent); color: var(--accent); }
+
+/* hero */
+.hero { padding-block: 56px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+.eyebrow { font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); margin: 0 0 16px; }
+h1 {
+  font-family: var(--font-display); font-weight: 500; font-size: clamp(2.6rem, 8vw, 5rem);
+  line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 20px; text-wrap: balance;
+}
+.lede { font-size: clamp(1.05rem, 2.2vw, 1.25rem); max-width: 58ch; color: var(--fg); margin: 0 0 28px; }
+.cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block; text-decoration: none; font-weight: 600; font-size: 15px;
+  padding: 12px 20px; border-radius: 4px; border: 1px solid var(--accent);
+}
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn.ghost:hover { background: var(--surface); }
+
+.figures {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--fg); border-bottom: 1px solid var(--rule);
+}
+.fig { padding: 18px 16px 18px 0; min-width: 0; }
+.fig + .fig { padding-left: 16px; border-left: 1px solid var(--rule); }
+.fig b { display: block; font-family: var(--font-mono); font-weight: 500; font-size: clamp(1.4rem, 4vw, 2.2rem); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.fig span { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+/* sections */
+section { padding-block: 40px; border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+section.first { border-top: 0; }
+.label { font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.15; margin: 0 0 8px; text-wrap: balance; }
+.body { min-width: 0; }
+p { margin: 0 0 14px; max-width: 65ch; }
+
+/* experience */
+.roles { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.role { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding-block: 20px; border-top: 1px solid var(--rule); }
+.role:first-child { border-top: 0; padding-top: 0; }
+.years { font-family: var(--font-mono); font-size: 13px; color: var(--brass); font-variant-numeric: tabular-nums; }
+.role h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 0; }
+.role .org { color: var(--muted); font-size: 15px; margin: 0 0 6px; }
+.role p { margin: 0; }
+.duties { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--rule); max-width: 65ch; }
+.duties li { padding: 8px 0 8px 18px; border-bottom: 1px solid var(--rule); position: relative; font-size: 15px; }
+.duties li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: 8px; height: 2px; background: var(--brass); }
+
+/* compliance register */
+.register { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 0; border-top: 1px solid var(--fg); }
+.reg { padding: 14px 12px 14px 0; border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.reg code { font-family: var(--font-mono); font-size: 15px; font-weight: 500; color: var(--accent); }
+.reg span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+/* tools + targets */
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.employers { margin-bottom: 24px; }
+.tags li { font-size: 14px; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
+.targets { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.targets li { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px; font-family: var(--font-display); font-size: 1.15rem; line-height: 1.3; }
+.targets li small { display: block; font-family: var(--font-body); font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+.edu { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.edu li { display: flex; flex-wrap: wrap; gap: 4px 16px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.edu strong { font-weight: 600; }
+.edu span { color: var(--muted); }
+
+.contact-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 24px; }
+.reach { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--fg); }
+.reach li { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding-block: 12px; border-bottom: 1px solid var(--rule); }
+.reach .k { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.reach .v { font-family: var(--font-mono); font-size: 15px; font-weight: 500; color: var(--fg); text-decoration: none; overflow-wrap: anywhere; user-select: all; }
+.reach .v:hover { color: var(--accent); }
+.copy {
+  font: 500 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase;
+  background: transparent; color: var(--accent); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; cursor: pointer;
+}
+.copy:hover { border-color: var(--accent); }
+
+footer { border-top: 2px solid var(--fg); margin-top: 8px; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 13px; color: var(--muted); }
+footer span { font-family: var(--font-mono); }
+
+@media (min-width: 760px) {
+  body { padding-inline: 32px; }
+  section { grid-template-columns: 200px minmax(0, 1fr); gap: 32px; }
+  .role { grid-template-columns: 150px minmax(0, 1fr); gap: 24px; }
+  .role .years { padding-top: 5px; }
+}
+@media (max-width: 480px) {
+  .nav a { display: none; }
+  .fig span { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <div class="mark">S. K. Mishra · Delhi</div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#tools">Tools</a>
+      <a href="#roles">Roles</a>
+      <a href="#contact">Contact</a>
+      <button class="theme" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Administration · Finance · Compliance</p>
+        <h1>Sanjay Kumar Mishra</h1>
+        <p class="lede">More than thirty-three years of keeping books balanced, statutory returns filed and factories audit-ready. Now an independent consultant in administration, finance and compliance, based in Delhi.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Work with me</a>
+          <a class="btn ghost" href="#experience">See experience</a>
+        </div>
+      </div>
+      <div class="figures" role="list">
+        <div class="fig" role="listitem"><b>33+</b><span>years in accounts, commercial and taxation</span></div>
+        <div class="fig" role="listitem"><b>2008–25</b><span>Senior Manager at Aerol Formulations</span></div>
+        <div class="fig" role="listitem"><b>8+</b><span>years daily on Busy ERP</span></div>
+      </div>
+    </div>
+
+    <section id="about" class="first">
+      <p class="label">About</p>
+      <div class="body">
+        <h2>Accounts, commercial and compliance under one roof</h2>
+        <p>My career runs across accounts, commercial work, taxation, excise, administration and operations. For over sixteen years I ran accounts and commercial at a pharma manufacturer, and chaired its Safety Committee.</p>
+        <p>That mix means I read a balance sheet and a factory licence with the same care. I am equally at home closing the month-end and preparing for a CAG or GST audit.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="label">Experience</p>
+      <div class="body">
+        <h2>Where I have worked</h2>
+        <ul class="tags employers" aria-label="Employers">
+          <li>Aerol Formulations</li>
+          <li>Multani Pharmaceuticals</li>
+          <li>Sadhna Media</li>
+          <li>Aero Club (Woodland Shoes) / Rajdhani Leather</li>
+          <li>Kapoor Sales Corporation</li>
+          <li>Paras Lubricants</li>
+        </ul>
+        <ol class="roles">
+          <li class="role">
+            <div class="years">Jul 2025 – now</div>
+            <div>
+              <h3>Independent Finance &amp; Commercial Consultant</h3>
+              <p class="org">Consultant-on-demand · Delhi</p>
+              <p>Advisory work for manufacturers and other organisations that need experienced hands on finance, compliance and administration.</p>
+              <ul class="duties">
+                <li>Accounts, commercial operations and GST compliance</li>
+                <li>Inventory management and export documentation</li>
+                <li>Operational controls, audit preparedness and process improvement</li>
+                <li>Regulatory coordination, liaisoning and documentation management</li>
+                <li>Available for assignments in finance, compliance, audit, commercial operations and factory administration</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">Jul 2025 – now</div>
+            <div>
+              <h3>Founder &amp; Content Creator</h3>
+              <p class="org">Indian Bhakti Dhara</p>
+              <p>A multi-platform digital knowledge and content initiative covering corporate insights, compliance awareness and professional learning. I manage strategy, research, scripting, publishing and analytics, and use AI tools to speed up the workflow.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">Dec 2008 – Jul 2025</div>
+            <div>
+              <h3>Senior Manager, Accounts &amp; Commercial · Chairman, Safety Committee</h3>
+              <p class="org">Aerol Formulations Pvt. Ltd. · Bahadurgarh, Haryana</p>
+              <p>Ran factory accounts and commercial operations for over sixteen years, working closely with senior leadership and the Head Office.</p>
+              <ul class="duties">
+                <li>End-to-end factory accounting: GST compliance, stock accounting, reconciliations and operational finance</li>
+                <li>Finalisation of accounts and statutory reporting with the Head Office</li>
+                <li>Export documentation and compliance for Nepal, Iraq, Saudi Arabia and Bangladesh, including factory stuffing under LUT</li>
+                <li>Introduced FIFO-based stock control and digital tracking that reduced reconciliation discrepancies</li>
+                <li>Internal, statutory and GST audits, CAG audits and government inspections</li>
+                <li>Licences, NOCs and liaison with GST, Excise, Pollution Control, Labour, Fire, AYUSH, PESO, ESI and the Electricity Boards</li>
+                <li>Authorised signatory for SBI banking operations</li>
+                <li>Chaired the Safety Committee: fire drills, safety training and employee awareness programmes</li>
+                <li>Factory administration across statutory, operational and safety requirements</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">2007 – 2008</div>
+            <div>
+              <h3>Manager, Excise &amp; Audit</h3>
+              <p class="org">Multani Pharmaceuticals Ltd. · Delhi</p>
+              <p>Handled excise compliance and audits across the factory and Head Office, ran distributor audits at several locations, and supported sales and Medical Representative meetings with compliance and reporting.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">2007 – 2008</div>
+            <div>
+              <h3>Manager, Excise</h3>
+              <p class="org">Sadhna Media Pvt. Ltd. · Noida</p>
+              <p>Managed excise documentation, compliance monitoring and statutory coordination.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">2000 – 2007</div>
+            <div>
+              <h3>Manager, Excise</h3>
+              <p class="org">Aero Club (Woodland Shoes) / Rajdhani Leather Pvt. Ltd. · Sonepat</p>
+              <p>Managed excise operations and regulatory compliance for manufacturing, including inspections, documentation and statutory reporting.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">1997 – 2000</div>
+            <div>
+              <h3>Excise Executive</h3>
+              <p class="org">Kapoor Sales Corporation · Delhi</p>
+              <p>Managed excise documentation, regulatory filings and audit support.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">1996 – 1997</div>
+            <div>
+              <h3>Excise Assistant</h3>
+              <p class="org">Paras Lubricants Pvt. Ltd. · Delhi</p>
+              <p>Supported excise operations, documentation and reporting.</p>
+            </div>
+          </li>
+          <li class="role">
+            <div class="years">1994 – 1995</div>
+            <div>
+              <h3>Excise Executive</h3>
+              <p class="org">Kapoor Sales Corporation · Delhi</p>
+              <p>First corporate role: excise documentation, compliance coordination and regulatory reporting.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="compliance">
+      <p class="label">Compliance register</p>
+      <div class="body">
+        <h2>Areas I have handled</h2>
+        <p>Each line below is a filing, licence or audit I have worked with directly.</p>
+        <div class="register">
+          <div class="reg"><code>GST</code><span>Returns, reconciliation and audits</span></div>
+          <div class="reg"><code>LUT</code><span>Export letters of undertaking</span></div>
+          <div class="reg"><code>Excise</code><span>Central excise compliance</span></div>
+          <div class="reg"><code>CAG / GST audit</code><span>Audit preparation and response</span></div>
+          <div class="reg"><code>ESI</code><span>Employee state insurance</span></div>
+          <div class="reg"><code>Labour laws</code><span>Statutory labour compliance</span></div>
+          <div class="reg"><code>Fire</code><span>Fire safety licensing</span></div>
+          <div class="reg"><code>Pollution Control</code><span>Consents and returns</span></div>
+          <div class="reg"><code>AYUSH</code><span>Ayurvedic product licensing</span></div>
+          <div class="reg"><code>PESO</code><span>Explosives and storage licences</span></div>
+          <div class="reg"><code>ISO 9001 / 45001</code><span>Quality and safety systems</span></div>
+          <div class="reg"><code>EPR</code><span>Extended producer responsibility</span></div>
+          <div class="reg"><code>POSH</code><span>Workplace harassment policy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <p class="label">Tools</p>
+      <div class="body">
+        <h2>What I use every day</h2>
+        <ul class="tags">
+          <li>Busy ERP</li>
+          <li>Tally Prime</li>
+          <li>Advanced Excel</li>
+          <li>Power BI</li>
+          <li>Microsoft Office</li>
+          <li>Google Workspace</li>
+        </ul>
+        <p style="margin-top:18px">I also work with AI assistants for drafting, research and analysis, and I am currently studying AI analytics, Power BI and internal auditing.</p>
+      </div>
+    </section>
+
+    <section id="roles">
+      <p class="label">Roles</p>
+      <div class="body">
+        <h2>Where I can help</h2>
+        <ul class="targets">
+          <li>School, hospital, NGO and trust administration<small>Full-time or consulting</small></li>
+          <li>Office and facility management<small>On-site or hybrid</small></li>
+          <li>Corporate administration<small>Compliance and operations</small></li>
+          <li>Senior finance and CFO advisory<small>Part-time or remote</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <p class="label">Education</p>
+      <div class="body">
+        <h2>Qualifications</h2>
+        <ul class="edu">
+          <li><strong>PGDBM</strong><span>IGNOU</span></li>
+          <li><strong>M.A.</strong><span>Bihar University</span></li>
+          <li><strong>Bachelor's degree</strong><span>Bihar University</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="label">Contact</p>
+      <div class="body">
+        <h2>Let's talk</h2>
+        <div class="contact-card">
+          <p><strong>Sanjay Kumar Mishra</strong><br>Delhi, India</p>
+          <p>Available for full-time, remote and part-time roles, and for consulting on administration, finance and compliance.</p>
+          <ul class="reach">
+            <li>
+              <span class="k">Phone</span>
+              <a class="v" href="tel:+919289548951" id="phoneText">9289548951</a>
+              <button class="copy" type="button" data-copy="9289548951">Copy</button>
+            </li>
+            <li>
+              <span class="k">Email</span>
+              <a class="v" href="mailto:imskmishra@gmail.com" id="mailText">imskmishra@gmail.com</a>
+              <button class="copy" type="button" data-copy="imskmishra@gmail.com">Copy</button>
+            </li>
+            <li>
+              <span class="k">LinkedIn</span>
+              <a class="v" href="https://www.linkedin.com/in/imskmishra" target="_blank" rel="noopener">linkedin.com/in/imskmishra</a>
+              <button class="copy" type="button" data-copy="linkedin.com/in/imskmishra">Copy</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Sanjay Kumar Mishra</div>
+    <span>Delhi, India</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  try {
+    var saved = localStorage.getItem('skm-theme');
+    if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+  } catch (e) {}
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function (b) {
+    b.addEventListener('click', function () {
+      var text = b.getAttribute('data-copy');
+      var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1500); };
+      var fallback = function () {
+        var node = b.parentNode.querySelector('.v');
+        var sel = window.getSelection(); var r = document.createRange();
+        r.selectNodeContents(node); sel.removeAllRanges(); sel.addRange(r);
+        b.textContent = 'Selected'; setTimeout(function () { b.textContent = 'Copy'; }, 1500);
+      };
+      try {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } catch (e) { fallback(); }
+    });
+  });
+  btn.addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme');
+    if (!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('skm-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
